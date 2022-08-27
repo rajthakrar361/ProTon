@@ -1,0 +1,106 @@
+.body
+{
+    background-color: #000000 !important;
+}
+
+#nav-bar
+{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.navbar
+{
+    background-image: linear-gradient(to right,#000066,#0000e6);
+    
+}
+
+.navbar-brand
+{
+    color: white !important;
+}
+.navbar-nav li a
+{
+    color: white !important;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+
+.promo-title
+{
+    font-size:40px;
+    font-weight: 600;
+    margin-top: 10px;
+    z-index: 50;
+    text-align: center;
+    font-family: 'Helvetica','Arial','sans-serif';
+    
+}
+
+.subheading
+{
+    font-family:'Helvetica','Arial','sans-serif';
+    margin-top: -15px;
+}
+
+#banner
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   
+   
+}
+
+.img-fluid
+{
+    margin-top: 50px;   
+}
+
+.upload-box
+{
+    width:80%;
+    overflow-y: scroll;
+    max-height: 350px;
+    margin-top: 5px;
+}
+
+.btn
+{
+    color: white !important;
+    background-color: #261f92;
+}
+
+.custom-shape-divider-bottom-1634136914 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    line-height: 0;
+    transform: rotate(180deg);
+    
+}
+
+.custom-shape-divider-bottom-1634136914 svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 112px;
+    transform: rotateY(180deg);
+    
+}
+
+.custom-shape-divider-bottom-1634136914 .shape-fill {
+    fill: #261f92;
+    
+}
+
+.file
+{
+    z-index: 100;
+
+    
+}
