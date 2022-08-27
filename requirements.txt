@@ -1,0 +1,62 @@
+django==3.2
+djangorestframework
+Pillow
+pytesseract
+pdf2image
+opencv-python
+#matplotlib
+#nltk
+#seaborn
+#textblob
+
+#install poppler in C path
+# sudo apt-get install poppler-utils
+#sudo apt update
+#sudo apt install tesseract-ocr
+#sudo apt install libtesseract-dev
+
+
+ <script>
+//         $('.input-b3').fileinput({
+// language: 'es',
+// // uploadUrl: '#',
+// showPreview: true,
+// showUpload: false,
+// browseOnZoneClick: true,
+// allowedPreviewTypes: false,
+// maxFileSize: 15000,
+// // uploadAsync: false,
+// uploadAsync: true,
+// theme: "explorer-fas",
+// removeFromPreviewOnError: true,
+// allowedFileExtensions: ['jpg', 'png', 'gif'],
+// maxFileCount: 10,
+// overwriteInitial: false,
+// fileActionSettings: {
+// showUpload: false,
+// showZoom: false,
+// },
+// });
+
+
+// data = new FormData($('#upload_form'));
+
+// $.ajax({
+    
+// url: '/api/upload/',
+// data: data,
+
+// type: 'POST',
+// contentType: false, // Important
+// processData: false, // Important
+// success: function (response) {
+// console.log('great!');
+
+// },
+// error: function (error) {
+// console.log('fail');
+// }
+// });
+
+
+    </script>

@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title>File Upload</title>
+  <link rel="stylesheet" href="{% static '/website/css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%234f722c%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>📥</text></svg>" />
+</head>
+<body>
+  <div class="wrapper">
+    <header><b>File Uploader</header>
+      
+
+    {% block content %}
+<p>
+  <form action="/api/upload/" id="upload_form" enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+      <input class="file-input" type="file" name="docfile" hidden required multiple ></input> 
+      <i class="far fa-file-pdf"></i>
+      <p id="ptemp">Browse File to Upload</p>
+
+    <input class="button-extract" type="submit" value="Extract">
+    <input type="submit" value="Cancel" onclick="window.location.href='{% url 'website:web_home' %}';return false;">
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  
+  
+  </form>
+</p>
+{% block content %}
+<script type="text/javascript" src="{% static '/website/js/script.js' %}"></script>
+<script>
+  // $("#upload_form").submit(function() {
+  //   console.log('Checking file size');
+  //   if (window.File && window.FileReader && window.FileList && window.Blob) {
+  //       var file = $('#id_{{ form.upload_field_name }}')[0].files[0];
+  //       if (file && file.size > {{ form.max_upload_limit }} ) {
+  //           alert("File " + file.name + " of type " + file.type + " must be < {{ form.max_upload_limit_text }}");
+  //       return false;
+  //     }
+  //   }
+  // });
+    var btn = document.querySelector('.button-extract');
+    btn.addEventListener("click", () =>{
+    console.log('processing');
+    });
+
+
+
+  </script>
+
+
+
+
+
+
+
+  
+ 
+  
+</body>
+</html>
